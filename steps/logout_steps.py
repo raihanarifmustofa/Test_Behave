@@ -9,8 +9,8 @@ def step_logged_in(context):
     context.browser.get("http://127.0.0.1:8000/users/login/")
     time.sleep(1)
 
-    context.browser.find_element(By.ID, "email-input").send_keys("testuser@gmail.com")
-    context.browser.find_element(By.ID, "password-input").send_keys("Password123!!")
+    context.browser.find_element(By.ID, "email-input").send_keys("testuser1@gmail.com")
+    context.browser.find_element(By.ID, "password-input").send_keys("Password@123!!")
     context.browser.find_element(By.ID, "login-submit-btn").click()
     time.sleep(2)
 

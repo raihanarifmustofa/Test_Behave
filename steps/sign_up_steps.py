@@ -22,8 +22,8 @@ def step_go_to_signup(context):
 
 @when("I fill the sign up form with valid data")
 def step_fill_form(context):
-    context.browser.find_element("id", "username-input").send_keys("testuser2")
-    context.browser.find_element("id", "email-input").send_keys("testuser2@gmail.com")
+    context.browser.find_element("id", "username-input").send_keys("testuser1")
+    context.browser.find_element("id", "email-input").send_keys("testuser1@gmail.com")
     context.browser.find_element("id", "password-input").send_keys("Password@123!!")
     context.browser.find_element("id", "confirm-password-input").send_keys("Password@123!!")
     context.browser.find_element("id", "terms-checkbox").click()

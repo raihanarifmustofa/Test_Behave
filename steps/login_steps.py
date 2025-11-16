@@ -15,13 +15,13 @@ def step_go_to_login(context):
 
 @when("I fill the login form with valid credentials")
 def step_fill_valid(context):
-    context.browser.find_element("id", "email-input").send_keys("testuser@gmail.com")
-    context.browser.find_element("id", "password-input").send_keys("Password123!!")
+    context.browser.find_element("id", "email-input").send_keys("testuser1@gmail.com")
+    context.browser.find_element("id", "password-input").send_keys("Password@123!!")
     time.sleep(1)
 
 @when("I fill the login form with an invalid password")
 def step_fill_invalid(context):
-    context.browser.find_element("id", "email-input").send_keys("testuser@gmail.com")
+    context.browser.find_element("id", "email-input").send_keys("testuser1@gmail.com")
     context.browser.find_element("id", "password-input").send_keys("WrongPassword999")
     time.sleep(1)
 
