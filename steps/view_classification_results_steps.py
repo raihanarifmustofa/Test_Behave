@@ -29,7 +29,7 @@ def step_impl(context):
     rows = context.browser.find_elements(By.CSS_SELECTOR, "tbody tr")
 
     for row in rows:
-        eye_buttons = row.find_elements(By.CSS_SELECTOR, "a[title='View Results']")
+        eye_buttons = row.find_elements(By.CSS_SELECTOR, "a[title='View Classification Results']")
 
         if eye_buttons:
             context.selected_row = row
